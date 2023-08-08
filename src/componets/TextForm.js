@@ -6,10 +6,13 @@ export default function TextForm(props) {
     const handleClickUpper = () => {
         let newText = text.toUpperCase();
         setText(newText)
+        props.showAlert('success', 'Converted to uppercase')
     }
     const handleClickLower = () => {
         let newText = text.toLocaleLowerCase();
         setText(newText)
+        props.showAlert('success', 'Converted to lowercase')
+
     }
     const handleOnChange = (event) => {
         setText(event.target.value)
@@ -29,7 +32,7 @@ export default function TextForm(props) {
                 <p>{text.split(" ").length} words and {text.length} characters</p>
                 <p>{0.008 * text.split(" ").length} Mintues read.</p>
                 <h2>Preview</h2>
-                {text}
+                {text.length > 0 ? text : 'Please enter text in the box above to preview'}
             </div>
         </>
     )
