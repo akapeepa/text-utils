@@ -2,13 +2,10 @@ import React, { useState } from 'react'
 
 export default function About() {
 
-    const [myStyle, setMyStyle] = useState({
-        color: 'white',
-        backgroundColor: 'black'
-    })
-
-    
-
+    // const [myStyle, setMyStyle] = useState({
+    //     color: 'white',
+    //     backgroundColor: 'black'
+    // })
 
     return (
         <div className='container'>
@@ -51,9 +48,9 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className="container my-3">
+            {/* <div className="container my-3">
                 <button className="btn btn-primary">Enable dark Mode</button>
-            </div>
+            </div> */}
         </div>
     )
 }

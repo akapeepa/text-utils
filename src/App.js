@@ -6,8 +6,6 @@ import TextForm from './componets/TextForm';
 import Alert from './componets/Alert';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-
-
 function App() {
   const [mode, setMode] = useState('light')
   const [alert, setAlert] = useState(null)
